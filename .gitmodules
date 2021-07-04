@@ -1,0 +1,3 @@
+[submodule "interface"]
+	path = interface
+	url = ../QvPlugin-interface
