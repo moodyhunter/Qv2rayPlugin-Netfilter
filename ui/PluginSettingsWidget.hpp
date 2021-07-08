@@ -1,6 +1,6 @@
 #pragma once
 
-#include "QvGUIPluginInterface.hpp"
+#include "QvPlugin/Gui/QvGUIPluginInterface.hpp"
 #include "core/Settings.hpp"
 #include "ui_PluginSettingsWidget.h"
 

@@ -24,7 +24,7 @@ void NetfilterPluginEventHandler::ProcessEvent(const Connectivity::EventObject &
                 }
                 return 0;
             }();
-            core.Start(((NetfilterPlugin *) PluginInstance)->options.rules, "127.0.0.1", socksPort);
+            core.Start(NetfilterPlugin::PluginInstance->options.rules, "127.0.0.1", socksPort);
             break;
         }
         case Connectivity::EventType::Disconnecting:

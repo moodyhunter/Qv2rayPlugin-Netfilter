@@ -1,4 +1,4 @@
-#include "QvGUIPluginInterface.hpp"
+#include "QvPlugin/Gui/QvGUIPluginInterface.hpp"
 #include "ui/PluginMainWindowWidget.hpp"
 #include "ui/PluginSettingsWidget.hpp"
 
