@@ -42,6 +42,9 @@ jobs:
           arch: win64_msvc2019_64
           aqtversion: ==1.2.2
 
+      - name: Install Vulkan SDK
+        uses: humbletim/setup-vulkan-sdk@v1.0.2
+
       - name: Build
         shell: bash
         env:
