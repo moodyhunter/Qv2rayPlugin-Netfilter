@@ -19,13 +19,14 @@ class NetfilterPlugin
   public:
     const QvPluginMetadata GetMetadata() const override
     {
-        return QvPluginMetadata                                           //
-            { "NetFilter Transparent Proxy",                              //
-              "Community",                                                //
-              PluginId{ "netfilter" },                                    //
-              "A transparent proxy plugin for Qv2ray, uses NetfilterSDK", //
-              "",                                                         //
-              { Qv2rayPlugin::COMPONENT_EVENT_HANDLER, Qv2rayPlugin::COMPONENT_GUI } };
+        return QvPluginMetadata{
+            "NetFilter Transparent Proxy",
+            "Community",
+            PluginId{ "netfilter" },
+            "A transparent proxy plugin for Qv2ray, uses NetfilterSDK",
+            QUrl{},
+            { Qv2rayPlugin::COMPONENT_EVENT_HANDLER, Qv2rayPlugin::COMPONENT_GUI },
+        };
     }
 
     bool InitializePlugin() override;

@@ -12,14 +12,16 @@ class SimplePluginSettingsWidget
 
   public:
     explicit SimplePluginSettingsWidget(QWidget *parent = nullptr);
-    void SetSettings(const QJsonObject &o) override
-    {
-        option.loadJson(o);
-    }
 
-    QJsonObject GetSettings() override
+    // PluginSettingsWidget interface
+  public:
+    void Load() override
     {
-        return option.toJson();
+        option.loadJson(settings);
+    }
+    void Store() override
+    {
+        settings = option.toJson();
     }
 
   protected:
